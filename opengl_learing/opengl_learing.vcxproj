@@ -102,7 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependence\GLAD\include;$(SolutionDir)Dependence\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependence\GLM;$(SolutionDir)Dependence\GLAD\include;C:\Users\Administrator\source\repos\opengl_learing\opengl_learing\shader_m.h;$(SolutionDir)Dependence\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,6 +128,15 @@
   <ItemGroup>
     <ClCompile Include="..\Dependence\GLAD\src\glad.c" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="shader_m.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="color.fs" />
+    <None Include="color.vs" />
+    <None Include="light_cube.fs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
